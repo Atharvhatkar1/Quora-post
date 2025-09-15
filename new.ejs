@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create New Post</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h1>Create a New Post</h1>
+
+    <form method="post" action="/posts">
+        <label for="username">Username</label>
+        <input id="username" name="username" placeholder="Enter Username" required />
+
+        <label for="email">Email</label>
+        <input id="email" type="email" name="email" placeholder="Enter Email" required />
+
+        <label for="password">Password</label>
+        <input id="password" type="password" name="password" placeholder="Enter Password" required />
+
+        <label for="content">Content</label>
+        <textarea id="content" name="content" placeholder="Write your thoughts..." required></textarea>
+
+        <button type="submit" class="btn">Submit Post</button>
+    </form>
+
+    <p style="text-align:center; margin-top:15px;">
+        <a href="/" class="btn">Back to Posts</a>
+    </p>
+</body>
+</html>
